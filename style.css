@@ -33,6 +33,9 @@ html{
 body{
     background-color: #f9f9f9;
 }
+section{
+    padding: 2rem 9%;
+}
 .btn{
     margin-top: 1rem;
     display:inline-block;
@@ -112,7 +115,7 @@ body{
     color: #fff;
 }
 
-/* .header .search-form{
+.header .search-form{
     position: absolute;
     top: 110%;
     right: 2rem;
@@ -132,7 +135,7 @@ body{
     border: none;
     font-size: 1.6rem;
     color: var(--black);
-} */
+} 
 
 .header .search-form {
     position: absolute;
@@ -261,23 +264,103 @@ body{
     padding: .2rem 0;
     color: var(--light-color);
 }
+.header .login-form p a{
+    color: #ff0000;
+    text-decoration: underline;
+}
+/* home section */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/banner1.jpg) ;
+    background-position: center;
+    background-size:cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .content{
+    text-align: center;
+    width: 90rem;
+}
+.home .content h3{
+    color: var(--black);
+    font-size: 3rem;
+}
+.home .content h3 span{
+    color: var(--orange);
+}
+.home .content p{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:991px){
     html{
         font-size: 55%;
     }
     .header{
-        padding: 1rem;
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
     }
 }
 
-@media (max-width:9768px){
+@media (max-width:968px){
 
     #menu-btn{
         display: inline-block;
     }
     .header .navbar{
-        
+        position: absolute;
+        padding: 2rem;
+        margin: .5rem;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+    
+    .header .navbar a{
+        font-size: 2rem;
+        /* padding: .5rem;
+        margin: 0 1rem;
+        color: var(--black);
+        display: block; */
+        margin: 2rem 2.5rem;
+        display: block;
     }
 }
 
